@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les: 1-3</title>
+</head>
+
+<body>
+    <button id="btncheck" onclick="versiecheck();">Check Versie</button>
+    <div id="resultaat">Nog geen resultaat. Druk op de knop!</div>
+
+    <script>
+        function versiecheck() {
+            const ibrowser = navigator.appName;
+            const versie = navigator.appVersion;
+            const check = 'U gebruikt: ' + ibrowser + ' versie nummer: ' + versie;
+
+            document.getElementById('resultaat').innerHTML = check;
+        }
+    </script>
+
+    <noscript>
+        Om deze site optimaal te gebruiken is het noodzakelijk om Javascript aan te zetten.
+        <a href="https://www.enable-javascript.com/nl/">
+            Hier vind je instructies over hoe je Javascript activeert in je web browser</a>.
+    </noscript>
+</body>
+
+</html>
